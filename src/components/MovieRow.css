@@ -1,0 +1,39 @@
+html{
+    /* 1rem == 10px; */
+    font-size: 65%;
+}
+
+
+.movieRow{
+    margin-bottom: 3rem;
+}
+
+.movieRow h2{
+    margin: 0rem 0rem 0rem 3rem;
+}
+
+.movieRow--listArea {
+    overflow-x: hidden;
+    margin-left: 3rem;
+}
+
+.movieRow--list {
+    width: 900rem;
+    
+}
+
+.movieRow--item {
+    display: inline-block;
+    width: 15rem;
+    cursor: pointer;
+}
+
+.movieRow--item img {
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+}
+
+.movieRow--item img:hover{
+    transform: scale(1);
+}
