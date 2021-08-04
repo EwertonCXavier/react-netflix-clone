@@ -3,8 +3,8 @@ import Tmdb from './Tmdb';
 import MovieRow from './components/MovieRow';
 import './App.css';
 import FeaturedMovie from './components/FeaturedMovie.js'
-import Header from './components/Header'
-
+import Header from './components/Header';
+import netflixLogo from './Netflix_LoadTime.gif';
 
 
 export default () => {
@@ -75,6 +75,25 @@ export default () => {
         }
       </section>
 
+      <footer>
+        <p>Feito com <span role="img" aria-label="coração">dedicação</span> por Ewerton C. Xavier, baseado no vídeo da B7Web
+        </p>
+        <p>
+        Direitos de imagem para Netflix
+        </p>
+        
+        <p>
+        Dados pegos do site Themoviedb.org
+        </p>
+      </footer>
+
+      {movieList.length <=0 && 
+        <div className="loading">
+          <img src={netflixLogo} alt="Carregando" />
+          
+        </div>
+      }
+      
       {/* <h1>
         3 - Header
         2 - Destaque
